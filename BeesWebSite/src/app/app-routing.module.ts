@@ -8,7 +8,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 const routes: Routes = [
-  { path: '', component: PescaraComponent },
+  { path: '', component: PcelinjakComponent },
   { path: 'pcelinjak', component: PcelinjakComponent },
   { path: 'pescara', component: PescaraComponent },  
   { path: 'kontakt', component: KontaktComponent }, 
