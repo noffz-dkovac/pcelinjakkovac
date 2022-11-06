@@ -1,0 +1,27 @@
+<div>
+    <div class="headerImage">
+        <img class="headerImageSize" src="/assets/images/headerimage.jpg" alt="">
+    </div>
+    <mat-toolbar class="matToolBar staticHeader">
+        <nav  class="navigationBar">
+            <button class="navigationBarButton"
+                name="pescaraButton"
+                routerLink="/pescara">
+                Deliblatska peščara
+            </button>
+            <button class="navigationBarButton"
+                routerLink="/pcelinjak">
+                Naš pčelinjak
+            </button>
+            <button class="navigationBarButton"
+                routerLink="/proizvodi">
+                Naši proizvodi
+            </button>
+            <button class="navigationBarButton"
+                routerLink="/kontakt">
+                Kontakt
+            </button>
+        </nav>    
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+</div>

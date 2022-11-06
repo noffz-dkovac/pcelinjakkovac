@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.headerImageSize {
+    height: 100%;
+    width: 100%;
+}
+
+.standardImageSize {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.headerAtt {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.paragraphAtt {
+    font-size: x-large;
+    line-height: 150%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+}
+
+@media screen and (max-width: 920px) {
+    .standardImageSize{
+        width: 90%;
+        margin-left: 5%;
+    }
+}

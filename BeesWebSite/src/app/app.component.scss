@@ -1,0 +1,55 @@
+.navigationBarButton {
+    background-color: yellow;
+    color: black;
+    padding-right: 5%;
+    border: none;
+    font-size: 30px;
+    height: 100%;
+}
+
+.navigationBarButton:hover{
+    background-color: #34a208;
+}
+
+.matToolBar {
+    background-color: yellow;
+    padding-left: 0px;
+    margin-bottom: 5%;
+}
+
+.navigationBar {
+    background-color: yellow;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.headerImage {
+    height: 30%;
+}
+
+.staticHeader {
+    position: sticky;
+    top: 0px;
+}
+
+@media screen and (max-width: 920px) {
+    .navigationBar{
+        flex-direction: column;
+        width: 100%;
+        margin-right: 0px;
+    }
+    .matToolBar{
+        flex-direction: column;
+        height: auto;
+    }
+    .navigationBarButton{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 921px) {
+    .matToolBar{
+        height: 50px;
+    }
+}
