@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
@@ -7,8 +8,12 @@ import { NavigationEnd, Router } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  constructor(private router: Router) { }
+  constructor(private router: Router, private titleService:Title) {
+    this.titleService.setTitle("Pčelinjak Kovač");
+   }
   navBarVisible : boolean = false;
+
+
   ngOnInit() {
       this.router.events.subscribe((event) => {
           if (!(event instanceof NavigationEnd)) {
