@@ -19,3 +19,15 @@
 .lastImageBottomMargin {
     margin-bottom: 5%;
 }
+
+@media screen and (max-width: 920px) {
+    .paragraphAtt{
+        font-size: large;
+    }
+    .headerAtt{
+        font-size: x-large;
+    }
+    .imageSource{
+        margin-left: 5%;
+    }
+}

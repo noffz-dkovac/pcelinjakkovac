@@ -1,23 +1,44 @@
 <div>
+
+</div>
+
+
+<div>
     <div class="headerImage">
         <img class="headerImageSize" src="/assets/images/headerimage.jpg" alt="">
     </div>
     <mat-toolbar class="matToolBar staticHeader">
         <nav  class="navigationBar">
-            <button class="navigationBarButton"
+            <div class="menuNav">
+                <p class="menuTitle">
+                    Pčelinjak Kovač
+                </p>
+                <button class="hamburgerButton" (click)="onMenuClick()">
+                    <mat-icon>menu</mat-icon>
+                </button>
+            </div>
+            <button class="navigationBarButton" 
+                (click)="onChoosingPage()"
+                [ngClass]="{'collapsed': !navBarVisible}"
                 routerLink="/pcelinjak-kovac-deliblatskapescara">
                 Naš pčelinjak
             </button>
-            <button class="navigationBarButton"
+            <button class="navigationBarButton" 
+                (click)="onChoosingPage()"
+                [ngClass]="{'collapsed': !navBarVisible}"
                 routerLink="/pcelinjiproizvodi-bagremovmed-livadskimed-rakijaodmeda-banat">
                 Naši proizvodi
             </button>
-            <button class="navigationBarButton"
+            <button class="navigationBarButton" 
+                (click)="onChoosingPage()"
+                [ngClass]="{'collapsed': !navBarVisible}"
                 name="pescaraButton"
                 routerLink="/deliblatskapescara">
                 Deliblatska peščara
             </button>
-            <button class="navigationBarButton"
+            <button class="navigationBarButton" 
+                (click)="onChoosingPage()"
+                [ngClass]="{'collapsed': !navBarVisible}"
                 routerLink="/kontakt">
                 Kontakt
             </button>

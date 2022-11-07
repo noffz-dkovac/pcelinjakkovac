@@ -17,7 +17,7 @@
     background-color: yellow;
     //background: rgb(186,215,3);
     //background: linear-gradient(90deg, rgba(186,215,3,1) 0%, rgba(207,218,14,1) 21%, rgba(199,232,57,1) 31%, rgba(231,240,12,0.9615196420365021) 41%, rgba(231,240,12,1) 58%, rgba(141,238,40,1) 67%, rgba(11,241,44,1) 82%, rgba(9,205,4,1) 100%);
-    padding-left: 0px;
+    padding: 0px;
     margin-bottom: 5%;
 }
 
@@ -39,6 +39,32 @@
     top: 0px;
 }
 
+.menuNav {
+    color: black;
+    padding-right: 0%;
+    border: none;
+    font-size: 20px;
+    height: 100%;
+    display: flex;
+    justify-content:space-between;
+    vertical-align: middle;
+}
+
+.hamburgerButton {
+    background-color: yellow;
+    border: none;
+}
+
+.collapsed {
+    display: none;
+}
+
+.menuTitle {
+    padding-top: 0.5%;
+    font-size: large;
+    vertical-align:middle;
+}
+
 @media screen and (max-width: 920px) {
     .navigationBar{
         flex-direction: column;
@@ -57,5 +83,11 @@
 @media screen and (min-width: 921px) {
     .matToolBar{
         height: 50px;
+    }
+    .menuNav {
+        display: none;
+    }
+    .collapsed {
+        display: block;
     }
 }

@@ -8,7 +8,7 @@ import { NavigationEnd, Router } from '@angular/router';
 })
 export class AppComponent implements OnInit {
   constructor(private router: Router) { }
-    
+  navBarVisible : boolean = false;
   ngOnInit() {
       this.router.events.subscribe((event) => {
           if (!(event instanceof NavigationEnd)) {
@@ -16,5 +16,13 @@ export class AppComponent implements OnInit {
           }
           window.scrollTo(0, 0)
       });
+  }
+
+  onMenuClick(){
+     this.navBarVisible = !this.navBarVisible;
+  }
+
+  onChoosingPage(){
+    this.navBarVisible = false;
   }
 }
