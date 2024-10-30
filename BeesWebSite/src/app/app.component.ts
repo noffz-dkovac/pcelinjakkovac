@@ -9,7 +9,7 @@ import { NavigationEnd, Router } from '@angular/router';
 })
 export class AppComponent implements OnInit {
   constructor(private router: Router, private titleService:Title) {
-    this.titleService.setTitle("Pčelinjak Kovač");
+    this.titleService.setTitle("Pčelinjak Kovač - prodaja prirodnog meda");
    }
   navBarVisible : boolean = false;
 
